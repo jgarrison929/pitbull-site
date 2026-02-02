@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Features | Pitbull Construction Solutions",
@@ -136,12 +137,7 @@ export default function FeaturesPage() {
           <p className="mt-4 text-lg text-muted">
             Currently in alpha. Join the waitlist to get early access.
           </p>
-          <a
-            href="/#waitlist"
-            className="mt-8 inline-flex items-center justify-center bg-amber hover:bg-amber-dark text-background font-semibold px-8 py-3 rounded-lg transition-colors text-lg"
-          >
-            Join the Waitlist
-          </a>
+          <Link href="/#waitlist" className="mt-8 inline-flex items-center justify-center bg-amber hover:bg-amber-dark text-background font-semibold px-8 py-3 rounded-lg transition-colors text-lg">Join the Waitlist</Link>
         </div>
       </section>
     </div>
