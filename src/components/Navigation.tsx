@@ -31,12 +31,7 @@ export function Navigation() {
             >
               About
             </Link>
-            <a
-              href="/#waitlist"
-              className="text-sm font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors"
-            >
-              Join the Waitlist
-            </a>
+            <Link href="/#waitlist" className="text-sm font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors">Join the Waitlist</Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -83,13 +78,7 @@ export function Navigation() {
               >
                 About
               </Link>
-              <a
-                href="/#waitlist"
-                className="font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors text-center"
-                onClick={() => setIsOpen(false)}
-              >
-                Join the Waitlist
-              </a>
+              <Link href="/#waitlist" className="font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors text-center" onClick={() => setIsOpen(false)}>Join the Waitlist</Link>
             </div>
           </div>
         )}
