@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { FeatureCard } from "@/components/FeatureCard";
 import { WaitlistForm } from "@/components/WaitlistForm";
 
@@ -58,12 +60,10 @@ export default function Home() {
       <section className="min-h-[80vh] flex items-center">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-32">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight max-w-4xl">
-            One platform. One login. One database.{" "}
-            <span className="text-amber">Everything talks to everything.</span>
+            Stop running projects on <span className="text-amber">duct tape</span>.
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-muted max-w-2xl">
-            AI-powered construction management for general contractors. Cloud or
-            self-hosted. No more duct tape.
+            Pitbull replaces siloed tools with one GC-first platform that actually talks to itself. AI reads your docs and flags issues before they turn into change orders. Cloud or self-hosted.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
@@ -72,15 +72,15 @@ export default function Home() {
             >
               Join the Waitlist
             </a>
-            <a
+            <Link
               href="/features"
               className="inline-flex items-center justify-center border border-surface-light hover:border-amber text-foreground font-semibold px-8 py-3 rounded-lg transition-colors text-lg"
             >
               See Features
-            </a>
+            </Link>
           </div>
           <p className="mt-4 text-sm text-muted">
-            Currently in alpha. Building in public.
+            Alpha access is limited. We’ll reach out when a spot opens.
           </p>
         </div>
       </section>
@@ -89,13 +89,10 @@ export default function Home() {
       <section className="bg-surface py-16 sm:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold">
-            Construction runs on{" "}
-            <span className="text-amber">duct tape.</span>
+            Your stack is expensive. Your data is <span className="text-amber">trapped</span>.
           </h2>
           <p className="mt-4 text-lg text-muted max-w-3xl">
-            A typical general contractor pays for all of this. None of it talks
-            to each other. Data lives in silos. PMs spend half their day copying
-            information between platforms.
+            Most GCs pay for a pile of tools that do not share data. PMs waste hours re-keying the same info across docs, emails, spreadsheets, and portals. That is where mistakes hide.
           </p>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {problems.map((problem) => (
@@ -109,8 +106,7 @@ export default function Home() {
             ))}
           </div>
           <p className="mt-8 text-lg font-semibold">
-            Pitbull replaces the entire disconnected toolchain with{" "}
-            <span className="text-amber">one platform</span>.
+            Pitbull replaces the disconnected toolchain with <span className="text-amber">one platform</span>.
           </p>
         </div>
       </section>
