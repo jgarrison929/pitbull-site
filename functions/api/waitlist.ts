@@ -17,8 +17,18 @@ export const onRequestPost = async (context: CfContext): Promise<Response> => {
       });
     }
 
-    const body = (await context.request.json()) as { email?: string };
+    const body = (await context.request.json()) as { 
+      email?: string;
+      company?: string;
+      role?: string;
+      companySize?: string;
+      currentTools?: string;
+    };
     const email = (body.email || "").trim().toLowerCase();
+    const company = (body.company || "").trim();
+    const role = (body.role || "").trim();
+    const companySize = (body.companySize || "").trim();
+    const currentTools = (body.currentTools || "").trim();
 
     // Simple, cheap validation (good enough for MVP)
     const emailOk = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
@@ -40,7 +50,14 @@ export const onRequestPost = async (context: CfContext): Promise<Response> => {
 
     await context.env.PITBULL_WAITLIST.put(
       key,
-      JSON.stringify({ email, createdAt: new Date().toISOString() })
+      JSON.stringify({ 
+        email, 
+        company, 
+        role, 
+        companySize, 
+        currentTools,
+        createdAt: new Date().toISOString() 
+      })
     );
 
     return new Response(JSON.stringify({ ok: true }), {
