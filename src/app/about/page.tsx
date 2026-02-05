@@ -35,9 +35,8 @@ export default function AboutPage() {
             <p>
               Pitbull is the alternative. One platform that replaces the
               disconnected toolchain. AI that reads documents and catches
-              problems before they cost money. Pricing you can understand. And
-              the option to run it on your own servers if that is what your
-              business requires.
+              problems before they cost money. Pricing you can understand. Built
+              cloud-native for the future of construction.
             </p>
           </div>
         </div>
@@ -71,28 +70,25 @@ export default function AboutPage() {
       <section className="py-16 sm:py-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold">
-            The <span className="text-amber">self-hosted</span> philosophy.
+            The <span className="text-amber">cloud-first</span> approach.
           </h2>
 
           <div className="mt-8 space-y-6 text-lg text-muted leading-relaxed">
             <p>
-              Every competitor in this space is cloud-only. Your data lives on
-              their servers, accessible only as long as you keep paying. Stop
-              paying and your project history, your documents, your contracts
-              disappear behind a paywall.
+              The future of construction runs in the cloud. With data centers in space 
+              within the next decade and edge computing everywhere, local infrastructure 
+              is becoming obsolete except for unique edge cases.
             </p>
             <p>
-              We think that is wrong. Your data is yours. Pitbull offers a cloud
-              option for teams that want convenience, and a self-hosted option
-              for teams that need control. Government contractors, DOD work,
-              regulated environments, or anyone who believes their business data
-              should live on their own infrastructure.
+              Pitbull is built cloud-native from day one. This means your team can access 
+              projects from anywhere, your data is automatically backed up across multiple 
+              regions, and you get updates without IT headaches. We handle the infrastructure 
+              so you can focus on building.
             </p>
             <p>
-              <code className="bg-surface px-2 py-1 rounded text-amber text-base">
-                docker compose up
-              </code>{" "}
-              and you are running. Same platform. Same features. Your hardware.
+              Modern cloud architecture provides reliability and scalability that local 
+              servers simply cannot match. Your construction projects deserve infrastructure 
+              that is as robust as the buildings you create.
             </p>
           </div>
         </div>
@@ -148,8 +144,8 @@ export default function AboutPage() {
                 <h3 className="font-semibold">The Future</h3>
                 <p className="text-muted">
                   Full AI document intelligence, insurance and sub compliance
-                  automation, accounting integration, self-hosted deployment
-                  package.
+                  automation, accounting integration, advanced analytics and
+                  reporting.
                 </p>
               </div>
             </div>

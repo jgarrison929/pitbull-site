@@ -58,11 +58,11 @@ const features = [
     icon: "📝",
   },
   {
-    title: "Self-Hosted Deployment",
-    what: "Run the entire platform on your own servers. Full data ownership, air-gapped capability, and no dependency on our cloud infrastructure.",
-    why: "Government contractors, DOD work, and contractors in regulated environments need their data on their own infrastructure. Others just want the peace of mind of owning their data.",
-    how: "docker compose up and you are running. Same platform, same features, your hardware. We provide the software and updates. You control the data.",
-    icon: "🏠",
+    title: "Cloud-Native Architecture",
+    what: "Built cloud-first for modern construction teams. Global accessibility, automatic scaling, multi-region backups, and zero infrastructure headaches.",
+    why: "The future of construction runs in the cloud. With data centers in space within the next decade and edge computing everywhere, local infrastructure is becoming obsolete except for unique edge cases.",
+    how: "Modern cloud infrastructure handles scaling, security, and reliability automatically. Your team can access projects from anywhere, your data is backed up across multiple regions, and you get updates without IT overhead.",
+    icon: "☁️",
   },
 ];
 

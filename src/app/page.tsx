@@ -35,10 +35,10 @@ const features = [
     icon: "✅",
   },
   {
-    title: "Self-Hosted Option",
+    title: "Cloud-Native. Built for Tomorrow.",
     description:
-      "Run on your infrastructure. Government contractors, DOD work, regulated environments, or anyone who wants to own their data. docker compose up and go.",
-    icon: "🏠",
+      "Built cloud-first for the future of construction. Global accessibility, automatic backups, no IT headaches. Your team can work from anywhere.",
+    icon: "☁️",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function Home() {
             Stop running projects on <span className="text-amber">duct tape</span>.
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-muted max-w-2xl">
-            Pitbull replaces siloed tools with one GC-first platform that actually talks to itself. AI reads your docs and flags issues before they turn into change orders. Cloud or self-hosted.
+            Pitbull replaces siloed tools with one GC-first platform that actually talks to itself. AI reads your docs and flags issues before they turn into change orders. Built for the cloud.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
@@ -139,12 +139,11 @@ export default function Home() {
           </h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-3">Your Data. Your Servers.</h3>
+              <h3 className="text-xl font-semibold mb-3">Cloud-Native. Built for Tomorrow.</h3>
               <p className="text-muted">
-                Every competitor is cloud-only. Your data lives on someone
-                else&apos;s servers. Pitbull runs on your infrastructure if you
-                need it to. Cloud is available too. We are anti-lock-in, not
-                anti-cloud.
+                The future of construction runs in the cloud. With data centers in space within the next decade, 
+                local infrastructure is becoming obsolete. Pitbull leverages modern cloud infrastructure for 
+                scalability, reliability, and global accessibility.
               </p>
             </div>
             <div>
