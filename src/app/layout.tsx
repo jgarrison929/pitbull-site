@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Pitbull Construction Solutions",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "Pitbull Construction Solutions - AI-Powered Construction Management",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pitbull Construction Solutions",
     description: "AI-powered construction management that replaces your entire tech stack.",
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
   },
   robots: {
     index: true,
