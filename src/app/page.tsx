@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import { FeatureCard } from "@/components/FeatureCard";
 import { WaitlistForm } from "@/components/WaitlistForm";
+import { DemoVideo } from "@/components/DemoVideo";
+import { Testimonials } from "@/components/Testimonials";
 
 const features = [
   {
@@ -131,8 +133,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Demo Video */}
+      <DemoVideo />
+
       {/* Built Different */}
-      <section className="bg-surface py-16 sm:py-24">
+      <section className="py-16 sm:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl sm:text-4xl font-bold">
             Built <span className="text-amber">different.</span>
@@ -167,6 +172,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* Waitlist */}
       <section id="waitlist" className="py-16 sm:py-24">
