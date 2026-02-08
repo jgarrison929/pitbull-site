@@ -17,7 +17,65 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Pitbull Construction Solutions | AI-Powered Construction Management",
   description:
-    "One platform. One login. One database. Everything talks to everything. AI-powered construction management for general contractors. Cloud or self-hosted.",
+    "One platform replacing Procore, Vista, and spreadsheets. AI document intelligence, bid leveling, compliance tracking for general contractors.",
+  keywords: "construction management software, construction ERP, Procore alternative, Vista alternative, AI construction, general contractor software, construction project management",
+  openGraph: {
+    title: "Pitbull Construction Solutions | AI-Powered Construction Management",
+    description: "One platform replacing your entire construction tech stack. AI-powered document intelligence, bid leveling, and compliance tracking for GCs.",
+    url: "https://pitbullconstructionsolutions.com",
+    siteName: "Pitbull Construction Solutions",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Pitbull Construction Solutions - AI-Powered Construction Management",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pitbull Construction Solutions",
+    description: "AI-powered construction management that replaces your entire tech stack.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  metadataBase: new URL("https://pitbullconstructionsolutions.com"),
+};
+
+// Structured data for Organization
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Pitbull Construction Solutions",
+  url: "https://pitbullconstructionsolutions.com",
+  description: "AI-powered construction management platform for general contractors",
+  foundingDate: "2025",
+  industry: "Construction Technology",
+};
+
+const softwareSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Pitbull Construction Solutions",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description: "AI-powered construction management platform that replaces siloed tools with one GC-first platform",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+    description: "Alpha access - pricing coming soon",
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +85,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(softwareSchema),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

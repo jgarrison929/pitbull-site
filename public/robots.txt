@@ -1,0 +1,8 @@
+# Pitbull Construction Solutions
+# https://pitbullconstructionsolutions.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pitbullconstructionsolutions.com/sitemap.xml
