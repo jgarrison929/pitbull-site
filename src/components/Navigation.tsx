@@ -15,8 +15,8 @@ export function Navigation() {
             <Image
               src="/logo.png"
               alt="Pitbull Construction Solutions"
-              width={40}
-              height={40}
+              width={56}
+              height={56}
               className="rounded"
             />
             <div className="flex flex-col">
