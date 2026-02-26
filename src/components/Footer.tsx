@@ -40,10 +40,10 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="/about"
+                  href="/#waitlist"
                   className="text-muted hover:text-foreground transition-colors"
                 >
-                  About
+                  Contact
                 </Link>
               </li>
             </ul>

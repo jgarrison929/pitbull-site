@@ -35,12 +35,6 @@ export function Navigation() {
             >
               Features
             </Link>
-            <Link
-              href="/about"
-              className="text-sm text-muted hover:text-foreground transition-colors"
-            >
-              About
-            </Link>
             <Link href="/#waitlist" className="text-sm font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors">Join the Waitlist</Link>
           </div>
 
@@ -80,13 +74,6 @@ export function Navigation() {
                 onClick={() => setIsOpen(false)}
               >
                 Features
-              </Link>
-              <Link
-                href="/about"
-                className="text-muted hover:text-foreground transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                About
               </Link>
               <Link href="/#waitlist" className="font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors text-center" onClick={() => setIsOpen(false)}>Join the Waitlist</Link>
             </div>
