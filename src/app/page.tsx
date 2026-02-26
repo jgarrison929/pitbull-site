@@ -59,6 +59,14 @@ const problems = [
 export default function Home() {
   return (
     <div className="pt-16">
+      {/* Disclaimer Banner */}
+      <div className="bg-amber/10 border-b border-amber/30">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 text-center">
+          <p className="text-sm text-muted">
+            <strong>Disclaimer:</strong> This application is not a real production application and is not available to enterprises. It is a portfolio project and technology demonstration.
+          </p>
+        </div>
+      </div>
       {/* Hero */}
       <section className="min-h-[80vh] flex items-center">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-32">

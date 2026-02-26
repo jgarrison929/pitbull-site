@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Pitbull Construction Solutions | AI-Powered Construction Management",
   description:
-    "One platform replacing your siloed tools and spreadsheets. AI document intelligence, bid leveling, compliance tracking for general contractors.",
+    "This application is not a real production application and is not available to enterprises. Portfolio project demonstrating AI-powered construction management concepts.",
   keywords: "construction management software, construction ERP, AI construction, general contractor software, construction project management, construction technology",
   openGraph: {
     title: "Pitbull Construction Solutions | AI-Powered Construction Management",
-    description: "One platform replacing your entire construction tech stack. AI-powered document intelligence, bid leveling, and compliance tracking for GCs.",
+    description: "Portfolio project demonstrating AI-powered construction management concepts. Not a production application.",
     url: "https://pitbullconstructionsolutions.com",
     siteName: "Pitbull Construction Solutions",
     images: [
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Pitbull Construction Solutions",
-    description: "AI-powered construction management that replaces your entire tech stack.",
+    description: "Portfolio project demonstrating AI-powered construction management concepts. Not a production application.",
     images: ["/og-image.svg"],
   },
   robots: {
@@ -58,7 +58,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Pitbull Construction Solutions",
   url: "https://pitbullconstructionsolutions.com",
-  description: "AI-powered construction management platform for general contractors",
+  description: "Portfolio project demonstrating AI-powered construction management concepts. Not a production application.",
   foundingDate: "2025",
   industry: "Construction Technology",
 };
@@ -69,7 +69,7 @@ const softwareSchema = {
   name: "Pitbull Construction Solutions",
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
-  description: "AI-powered construction management platform that replaces siloed tools with one GC-first platform",
+  description: "Portfolio project demonstrating AI-powered construction management concepts. Not a production application.",
   offers: {
     "@type": "Offer",
     price: "0",
