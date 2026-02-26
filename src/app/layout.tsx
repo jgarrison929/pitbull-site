@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Pitbull Construction Solutions | AI-Powered Construction Management",
   description:
-    "One platform replacing Procore, Vista, and spreadsheets. AI document intelligence, bid leveling, compliance tracking for general contractors.",
-  keywords: "construction management software, construction ERP, Procore alternative, Vista alternative, AI construction, general contractor software, construction project management",
+    "One platform replacing your siloed tools and spreadsheets. AI document intelligence, bid leveling, compliance tracking for general contractors.",
+  keywords: "construction management software, construction ERP, AI construction, general contractor software, construction project management, construction technology",
   openGraph: {
     title: "Pitbull Construction Solutions | AI-Powered Construction Management",
     description: "One platform replacing your entire construction tech stack. AI-powered document intelligence, bid leveling, and compliance tracking for GCs.",

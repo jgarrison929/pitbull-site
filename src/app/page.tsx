@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FeatureCard } from "@/components/FeatureCard";
 import { WaitlistForm } from "@/components/WaitlistForm";
 import { DemoVideo } from "@/components/DemoVideo";
+import { ProductScreenshots } from "@/components/ProductScreenshots";
 import { Testimonials } from "@/components/Testimonials";
 
 const features = [
@@ -45,10 +46,10 @@ const features = [
 ];
 
 const problems = [
-  "Procore ($50K+/year)",
-  "PlanGrid",
-  "Textura",
-  "Bluebeam",
+  "PM software ($50K+/year)",
+  "Plan review tools",
+  "Payment portals",
+  "Markup software",
   "Three different spreadsheets",
   "Email chains nobody can find",
   "A filing cabinet of insurance certs",
@@ -132,6 +133,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Product Screenshots */}
+      <ProductScreenshots />
 
       {/* Demo Video */}
       <DemoVideo />

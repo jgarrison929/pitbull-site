@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ const features = [
     why: "Leveling bids manually means hours in spreadsheets, re-typing numbers from PDFs, and hoping you did not miss a scope gap that becomes a change order later.",
     how: "Upload bid documents. AI extracts line items, quantities, and pricing. Auto-generates a comparison matrix. \"Electrical sub #3 is 40% below average on conduit. Verify scope.\" Catch problems before you award.",
     icon: "📊",
+    screenshot: "/screenshots/03-bids.png",
   },
   {
     title: "Sub Compliance Dashboard",
@@ -63,6 +65,7 @@ const features = [
     why: "The future of construction runs in the cloud. With data centers in space within the next decade and edge computing everywhere, local infrastructure is becoming obsolete except for unique edge cases.",
     how: "Modern cloud infrastructure handles scaling, security, and reliability automatically. Your team can access projects from anywhere, your data is backed up across multiple regions, and you get updates without IT overhead.",
     icon: "☁️",
+    screenshot: "/screenshots/01-dashboard.png",
   },
 ];
 
@@ -119,8 +122,18 @@ export default function FeaturesPage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-surface rounded-xl border border-surface-light aspect-video flex items-center justify-center">
-                <span className="text-6xl">{feature.icon}</span>
+              <div className="bg-surface rounded-xl border border-surface-light aspect-video flex items-center justify-center overflow-hidden relative">
+                {feature.screenshot ? (
+                  <Image
+                    src={feature.screenshot}
+                    alt={`${feature.title} screenshot`}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                ) : (
+                  <span className="text-6xl">{feature.icon}</span>
+                )}
               </div>
             </div>
           ))}

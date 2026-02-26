@@ -117,7 +117,7 @@ export function WaitlistForm() {
 
       <input
         type="text"
-        placeholder="Current tools (Procore, PlanGrid, Excel, etc.)"
+        placeholder="Current tools (PM software, plan review, Excel, etc.)"
         value={currentTools}
         onChange={(e) => setCurrentTools(e.target.value)}
         className="w-full bg-surface border border-surface-light rounded-lg px-4 py-3 text-foreground placeholder:text-muted focus:outline-none focus:border-amber transition-colors"
