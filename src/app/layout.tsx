@@ -74,7 +74,7 @@ const softwareSchema = {
     "@type": "Offer",
     price: "0",
     priceCurrency: "USD",
-    description: "Alpha access - pricing coming soon",
+    description: "Portfolio demonstration - not available for purchase",
   },
 };
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { FeatureCard } from "@/components/FeatureCard";
-import { WaitlistForm } from "@/components/WaitlistForm";
+// Portfolio demonstration
 import { DemoVideo } from "@/components/DemoVideo";
 import { ProductScreenshots } from "@/components/ProductScreenshots";
 import { Testimonials } from "@/components/Testimonials";
@@ -77,22 +77,13 @@ export default function Home() {
             Pitbull replaces siloed tools with one GC-first platform that actually talks to itself. AI reads your docs and flags issues before they turn into change orders. Built for the cloud.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
-            <a
-              href="#waitlist"
-              className="inline-flex items-center justify-center bg-amber hover:bg-amber-dark text-background font-semibold px-8 py-3 rounded-lg transition-colors text-lg"
-            >
-              Join the Waitlist
-            </a>
             <Link
               href="/features"
-              className="inline-flex items-center justify-center border border-surface-light hover:border-amber text-foreground font-semibold px-8 py-3 rounded-lg transition-colors text-lg"
+              className="inline-flex items-center justify-center bg-amber hover:bg-amber-dark text-background font-semibold px-8 py-3 rounded-lg transition-colors text-lg"
             >
               See Features
             </Link>
           </div>
-          <p className="mt-4 text-sm text-muted">
-            Alpha access is limited. We’ll reach out when a spot opens.
-          </p>
         </div>
       </section>
 
@@ -158,8 +149,8 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-semibold mb-3">Cloud-Native. Built for Tomorrow.</h3>
               <p className="text-muted">
-                The future of construction runs in the cloud. With data centers in space within the next decade, 
-                local infrastructure is becoming obsolete. Pitbull leverages modern cloud infrastructure for 
+                The future of construction runs in the cloud. With data centers in space within the next decade,
+                local infrastructure is becoming obsolete. Pitbull leverages modern cloud infrastructure for
                 scalability, reliability, and global accessibility.
               </p>
             </div>
@@ -188,17 +179,15 @@ export default function Home() {
       {/* Testimonials */}
       <Testimonials />
 
-      {/* Waitlist */}
-      <section id="waitlist" className="py-16 sm:py-24">
+      {/* Portfolio Notice */}
+      <section className="py-16 sm:py-24">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold">
-            Get <span className="text-amber">early access.</span>
+            Portfolio <span className="text-amber">demonstration.</span>
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Currently in alpha. Join the waitlist to be first in line when we
-            open up access.
+            This application is not a real production application and is not available to enterprises. It is a technology demonstration and portfolio project.
           </p>
-          <WaitlistForm />
         </div>
       </section>
     </div>

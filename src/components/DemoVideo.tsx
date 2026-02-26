@@ -55,8 +55,7 @@ export function DemoVideo() {
                 <span className="text-sm font-medium">Demo video coming soon</span>
               </span>
               <p className="mt-3 text-sm text-muted max-w-md">
-                We're putting together a walkthrough of Pitbull's AI features.
-                <br />Join the waitlist to get notified when it's ready.
+                A walkthrough of the AI features in this portfolio demonstration.
               </p>
             </div>
           </div>

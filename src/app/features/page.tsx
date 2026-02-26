@@ -140,17 +140,12 @@ export default function FeaturesPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Portfolio Notice */}
       <section className="bg-surface py-16 sm:py-24">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold">
-            Ready to ditch the{" "}
-            <span className="text-amber">duct tape?</span>
-          </h2>
-          <p className="mt-4 text-lg text-muted">
-            Currently in alpha. Join the waitlist to get early access.
+          <p className="text-lg text-muted">
+            This application is a portfolio project and technology demonstration. It is not available to enterprises.
           </p>
-          <Link href="/#waitlist" className="mt-8 inline-flex items-center justify-center bg-amber hover:bg-amber-dark text-background font-semibold px-8 py-3 rounded-lg transition-colors text-lg">Join the Waitlist</Link>
         </div>
       </section>
     </div>

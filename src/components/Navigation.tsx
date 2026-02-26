@@ -29,13 +29,7 @@ export function Navigation() {
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            <Link
-              href="/features"
-              className="text-sm text-muted hover:text-foreground transition-colors"
-            >
-              Features
-            </Link>
-            <Link href="/#waitlist" className="text-sm font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors">Join the Waitlist</Link>
+            <Link href="/features" className="text-sm font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors">Features</Link>
           </div>
 
           {/* Mobile hamburger */}
@@ -68,14 +62,7 @@ export function Navigation() {
         {isOpen && (
           <div className="md:hidden pb-4 border-t border-surface-light pt-4">
             <div className="flex flex-col gap-4">
-              <Link
-                href="/features"
-                className="text-muted hover:text-foreground transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Features
-              </Link>
-              <Link href="/#waitlist" className="font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors text-center" onClick={() => setIsOpen(false)}>Join the Waitlist</Link>
+              <Link href="/features" className="font-medium bg-amber hover:bg-amber-dark text-background px-4 py-2 rounded-lg transition-colors text-center" onClick={() => setIsOpen(false)}>Features</Link>
             </div>
           </div>
         )}
